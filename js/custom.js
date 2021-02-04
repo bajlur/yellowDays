@@ -45,11 +45,15 @@ const guestBtn = document.querySelector("#guests-input-btn"),
 	adultsAddBtn = document.querySelector("#adults-add-btn"),
 	childrenSubsBtn = document.querySelector("#children-subs-btn"),
 	childrenAddBtn = document.querySelector("#children-add-btn"),
+	ageSubsBtn = document.querySelector("#age-subs-btn"),
+	ageAddBtn = document.querySelector("#age-add-btn"),
 	adultsCountEl = document.querySelector("#guests-count-adults"),
+	ageCountEl = document.querySelector("#guests-count-age"),
 	childrenCountEl = document.querySelector("#guests-count-children");
 let maxNumGuests = 15,
 	isGuestInputOpen = false,
 	adultsCount = 1,
+	ageCount = 0,
 	childrenCount = 0;
 updateValues();
 guestBtn.addEventListener('click', function (e) {
@@ -79,7 +83,14 @@ childrenSubsBtn.addEventListener('click', function () {
 	childrenCount = substractValues(childrenCount, 0);
 	updateValues();
 });
-
+ageAddBtn.addEventListener('click', function () {
+	ageCount = addValues(ageCount);
+	updateValues();
+});
+ageSubsBtn.addEventListener('click', function () {
+	ageCount = substractValues(ageCount, 0);
+	updateValues();
+});
 function calcTotalGuests() {
 	return adultsCount + childrenCount;
 }
@@ -98,6 +109,7 @@ function updateValues() {
 	guestBtn.innerHTML = btnText;
 	adultsCountEl.innerHTML = adultsCount;
 	childrenCountEl.innerHTML = childrenCount;
+	ageCountEl.innerHTML = ageCount;
 	if (adultsCount == 1) {
 		adultsSubsBtn.classList.add("disabled");
 	} else {
@@ -106,11 +118,17 @@ function updateValues() {
 		childrenSubsBtn.classList.add("disabled");
 	} else {
 		childrenSubsBtn.classList.remove("disabled");
+	}if (ageCount == 0) {
+		ageSubsBtn.classList.add("disabled");
+	} else {
+		ageSubsBtn.classList.remove("disabled");
 	} if (calcTotalGuests() == maxNumGuests) {
 		adultsAddBtn.classList.add("disabled");
 		childrenAddBtn.classList.add("disabled");
+		ageAddBtn.classList.add("disabled");
 	} else {
 		adultsAddBtn.classList.remove("disabled");
 		childrenAddBtn.classList.remove("disabled");
+		ageAddBtn.classList.remove("disabled");
 	}
 }
