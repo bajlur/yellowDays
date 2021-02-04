@@ -16,9 +16,26 @@ jQuery('#custom-owl').owlCarousel({
     }
 });
 
+//   jQuery( document ).ready(function() {
+//       jQuery(".custom-submit-btn").click(function(){
+//		   jQuery(this).css("background-color","#f2f2f2");
+//		   jQuery(this).css("cursor","no-drop");
+////    	jQuery("#form-step-2").css("display","flex");
+//		   jQuery("#form-step-2").css("opacity","1");
+//		   jQuery("#form-step-2").css("transform","scale(1)");
+//		   jQuery("#form-step-2").css("transition","all 0.3s ease-in-out");
+//		   
+//  });
+//    });
+
+jQuery(".custom-submit-btn").click(function(){
+  	jQuery("#form-step-2").toggleClass("extraFormActive");
+  });
+
 
 jQuery('#inputDate').datepicker({
 });
+
 
 
 

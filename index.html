@@ -7,6 +7,7 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css'>
+<link rel="stylesheet" href="css/bootstrap-select.min.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/responsive.css">
@@ -61,7 +62,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#">About Us</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="product-listing.html">About Us</a> </li>
                 <!--
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
@@ -83,7 +84,7 @@
 <section class="custom-banner">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active"> <img class="d-block w-100" src="images/banner-1.jpg" alt="First slide">
+      <div class="carousel-item active"> <img class="d-block w-100" src="images/banner-1.jpeg" alt="First slide">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -95,7 +96,10 @@
           </div>
         </div>
       </div>
-      <div class="custom-travel-form">
+      
+    </div>
+  </div>
+  <div class="custom-travel-form">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -123,11 +127,18 @@
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
                             <label>No. Of Nights</label>
-                            <input type="number" placeholder="Select Stay">
+                            
+                            <select name="nights" id="nights" form="nightsform">
+							  <option value="1">1</option>
+							  <option value="2">2</option>
+							  <option value="3">3</option>
+							  <option value="4">4</option>
+							  <option value="4">4</option>
+							</select>
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>No. Of Nights</label>
-                            <input type="number" placeholder="Select Stay">
+                            <label>No. Of Rooms</label>
+                            <input type="number" placeholder="Enter Rooms">
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
                             <label>Guests</label>
@@ -148,8 +159,44 @@
                             <!-- /.booking-form__input --> 
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <button class="custom-submit-btn">Continue</button>
+                            <a class="custom-submit-btn" hrer="#">Continue</a>
                           </div>
+                        </div>
+                        <div class="form-group row" id="form-step-2">
+                        	<div class="col-lg-3 col-md-12 p-0 align-self-center">
+                            <label>Extra Seats</label>
+                            
+                            <select name="nights" id="ex-seats" form="nightsform">
+							  <option value="0">0</option>
+							  <option value="1">1</option>
+							  <option value="2">2</option>
+							  <option value="3">3</option>
+							  <option value="4">4</option>
+							  <option value="4">4</option>
+							</select>
+                          </div>
+                          <div class="col-lg-3 col-md-12 p-0 align-self-center">
+                            <label>Board basis</label>
+                            
+                            <select name="nights" id="board-basis" form="nightsform">
+							  <option value="select">Select</option>
+							  <option value="f-board">Full Board</option>
+							  <option value="h-board">Half Board</option>
+							  <option value="n-board">No Board</option>
+							</select>
+                          </div>
+                          <div class="col-lg-3 col-md-12 p-0 align-self-center">
+                            <label>Outward & Return</label>
+                            
+                            <select name="nights" id="on-re" form="nightsform">
+							  <option value="select">Select</option>
+							  <option value="outward">Outward</option>
+							  <option value="return">Return</option>
+							</select>
+                          </div>
+							<div class="col-lg-3 col-md-12 p-0 align-self-center">
+								<button class="banner-main-search">Search Now</button>
+							</div>
                         </div>
                       </form>
                     </div>
@@ -191,7 +238,7 @@
                             <!-- /.booking-form__input --> 
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <button class="custom-submit-btn">Continue</button>
+                            <a class="custom-submit-btn" hrer="#">Continue</a>
                           </div>
                         </div>
                       </form>
@@ -234,7 +281,7 @@
                             <!-- /.booking-form__input --> 
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <button class="custom-submit-btn">Continue</button>
+                           <a class="custom-submit-btn" hrer="#">Continue</a>
                           </div>
                         </div>
                       </form>
@@ -277,7 +324,7 @@
                             <!-- /.booking-form__input --> 
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <button class="custom-submit-btn">Continue</button>
+                            <a class="custom-submit-btn" hrer="#">Continue</a>
                           </div>
                         </div>
                       </form>
@@ -320,7 +367,7 @@
                             <!-- /.booking-form__input --> 
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <button class="custom-submit-btn">Continue</button>
+                            <a class="custom-submit-btn" hrer="#">Continue</a>
                           </div>
                         </div>
                       </form>
@@ -332,8 +379,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
 </section>
 <section class="trending-destination-custom custom-pad">
   <div class="container">
@@ -464,102 +509,85 @@
     </div>
   </div>
 </section>
-<footer class="tm-footer" style="background-image: url(images/footer-bg.jpg);">
-  <div class="tm-footer-contact-details">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-3">
-          <div class="tm-footer-about-us"> <a href="#" class="tm-footer-logo"><img src="images/logo.jpeg" alt=""></a>
-            <p class="demo">We believe that safety is paramount within any industry, and endeavour to assist you in ensuring your employees are safe at work.  We strive to achieve...</p>
-            <a href="#" class="tm-footer-about-us-btn">READ MORE</a>
-            <ul class="tm-footer-about-us-social-icon">
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3">
-          <div class="tm-footer-quick-links">
-            <div class="tm-footer-header">
-              <h6>Quick Links</h6>
-            </div>
-            <ul>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i><span>Home</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i><span>About Us</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i><span>Services</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i><span>Portfolio</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i><span>Testimonials</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i><span>Contact Us</span></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 px-lg-0">
-          <div class="tm-footer-quick-links">
-            <div class="tm-footer-header">
-              <h6>Our Categories</h6>
-            </div>
-            <ul>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i><span>Spain</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i><span>Spain By Flight</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i><span>Skiling</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i><span>Disneyland</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i><span>World Toor</span></a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i><span>Uk & Europe Breaks</span></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-3">
-          <div class="tm-opening-hours">
-            <div class="tm-footer-header">
-              <h6>Subscribe Now</h6>
-            </div>
-            <div class="footer-form">
-              <form>
-                <div class="form-group">
-                  <input type="name" class="form-control" placeholder="Name">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Enter email">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tm-footer-contact-imfo">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="tm-footer-contact-imfo-panel text-center">
-              <div class="tm-footer-contact-imfo-panel-icon d-flex align-items-center justify-content-center"> <img src="images/footer-contact-imfo-icon.png" alt=""> </div>
-              <h6>Call Us</h6>
-              <span>Phone : <a href="tel:+123-456-7890">000-1234-5678</a></span> </div>
-          </div>
-          <div class="col-md-4">
-            <div class="tm-footer-contact-imfo-panel text-center">
-              <div class="tm-footer-contact-imfo-panel-icon d-flex align-items-center justify-content-center"> <img src="images/footer-contact-imfo-icon2.png" alt=""> </div>
-              <h6 class="tm-h8">Address</h6>
-              <span>Address : <a href="tel:+123-456-7890">18 Attrill ave. Hilton,
-              Adelaide</a></span> </div>
-          </div>
-          <div class="col-md-4">
-            <div class="tm-footer-contact-imfo-panel text-center">
-              <div class="tm-footer-contact-imfo-panel-icon d-flex align-items-center justify-content-center"> <img src="images/footer-contact-imfo-icon3.png" alt=""> </div>
-              <h6 class="tm-h8">Email</h6>
-              <span>Email :<a href="tel:+123-456-7890">service@yourco.com</a></span> </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<footer class="custom-footer">
+ <div class="footer-custom-top">
+ 	<div class="container">
+  	<div class="row">
+  		<div class="col-lg-3 col-md-6">
+  			<div class="footer-col footer-col-1">
+  				<h5>Need Help?</h5>
+  				<ul class="footer-contact">
+  					<li>
+  						<h6>Call Us</h6>
+  						<a href="tel:000-1234-567">+000-1234-567</a>
+  					</li>
+  					<li>
+  						<h6>Email For Us</h6>
+  						<a href="mailto:yellowdays@demomail.com">yellowdays@demomail.com</a>
+  					</li>
+  				</ul>
+  				<ul class="footer-social">
+  					<h6>Follow Us</h6>
+  					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+  					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+  					<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+  				</ul>
+  			</div>
+  		</div>
+  		<div class="col-lg-3 col-md-6">
+  			<div class="footer-col footer-col-2">
+  				<h5>Site Links</h5>
+  				<ul>
+  					<li><a href="#">Home</a></li>
+  					<li><a href="#">About Us</a></li>
+  					<li><a href="#">Contact Us</a></li>
+  					<li><a href="#">Latest Updates</a></li>
+  					<li><a href="#">Accomodation</a></li>
+  				</ul>
+  			</div>
+  		</div>
+  		<div class="col-lg-3 col-md-6">
+  			<div class="footer-col footer-col-3">
+  				<h5>Our Categories</h5>
+  				<ul>
+					<li><a href="#">Spain</a></li>
+					<li><a href="#">Spain By Flight</a></li>
+					<li><a href="#">Skiling</a></li>
+					<li><a href="#">Disneyland</a></li>
+					<li><a href="#">Uk & Europe Breaks</a></li>
+  				</ul>
+  			</div>
+  		</div>
+  		<div class="col-lg-3 col-md-6">
+  			<div class="footer-col footer-col-4">
+  				<h5>Subscribe To Newsletter</h5>
+  				<form>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter email">
+                <button type="submit" class="dp-submit-btn"><i class="fas fa-paper-plane"></i></button>
+              </div>
+            </form>
+            <p class="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  			</div>
+  		</div>
+  	</div>
   </div>
-  <div class="tm-footer-copyright text-center">
-    <div class="container">
-      <p class="demo">Copyright 2019 Your Company All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
-    </div>
-  </div>
+ </div> 
+ <div class="custom-footer-btm">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-md-6">
+ 				<p><span><i class="far fa-copyright"></i></span> Yellowdays.com 2021. All Rights Reserved</p>
+ 			</div>
+ 			<div class="col-md-6">
+ 				<ul>
+ 					<li><a href="#">Tarms & Condition</a></li>
+ 					<li><a href="#">Privecy policy</a></li>
+ 				</ul>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div> 
 </footer>
 
 <!-- Optional JavaScript --> 
@@ -569,6 +597,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script> 
 <script src="js/owl.carousel.min.js"></script> 
+<script src="js/bootstrap-select.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>
