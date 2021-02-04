@@ -335,11 +335,29 @@ top: 8px;
 }
 .guests-input__options.open {
 	opacity: 1;
-	height: 146px
+	height: auto;
+    z-index: 9999;
 }
-.guests-input__options>div {
+input,select,input:focus,select:focus,.form-control:focus,.custom-travel-form button:focus{
+    box-shadow: none;
+    outline: none;
+}
+.add-room,
+.remove-room
+{
+    font-size: 13px;
+    line-height: 1.2;
+    color: #f60;
+    cursor: pointer;
+}
+.guests-input__options> .room_box {
 	padding: 6px 0;
-	text-align: center
+	text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.4);
+}
+.guests-input__options> .room_box div{
+    padding: 2px 0;
+    text-align: center
 }
 .guests-input__options>div:first-child {
 	padding-top: 8px
@@ -368,12 +386,18 @@ top: 8px;
 	border-color: #d8d8d8;
 	cursor: default
 }
+.guests-input__options h4
+{
+    font-size: 15px;
+    padding: 5px 15px;
+    text-align: center;
+}
 .guests-input__value {
 	display: inline-block;
 	padding: 0 10px;
 	width: 80px;
 	cursor: default;
-	font-size: 10px;
+	font-size: 12px;
 }
 .guests-input__value span {
 	display: inline-block;
