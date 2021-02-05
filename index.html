@@ -7,7 +7,6 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css'>
-<link rel="stylesheet" href="css/bootstrap-select.min.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/responsive.css">
@@ -123,18 +122,17 @@
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
                             <label>Departure Date</label>
-                            <input type="input" class="form-control" id="inputDate" placeholder="pick Your Date">
+                            <input type="input" class="form-control" id="inputDate" placeholder="Pick Your Date">
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
                             <label>No. Of Nights</label>
-                            
-                            <select name="nights" id="nights" form="nightsform">
-							  <option value="1">1</option>
-							  <option value="2">2</option>
-							  <option value="3">3</option>
-							  <option value="4">4</option>
-							  <option value="4">4</option>
-							</select>
+                            <select  class="custom-select sources" placeholder="Select Any">
+              							  <option value="1">1</option>
+              							  <option value="2">2</option>
+              							  <option value="3">3</option>
+              							  <option value="4">4</option>
+              							  <option value="4">4</option>
+              							</select>
                           </div>
                           <div class="col-lg-3 col-md-12 p-0 align-self-center">
                             <label>Rooms & Guests</label>
@@ -187,33 +185,30 @@
                         	<div class="col-lg-3 col-md-12 p-0 align-self-center">
                             <label>Extra Seats</label>
                             
-                            <select name="nights" id="ex-seats" form="nightsform">
-							  <option value="0">0</option>
-							  <option value="1">1</option>
-							  <option value="2">2</option>
-							  <option value="3">3</option>
-							  <option value="4">4</option>
-							  <option value="4">4</option>
-							</select>
+                              <select  class="custom-select sources" placeholder="Select Any">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="4">4</option>
+                              </select>
                           </div>
                           <div class="col-lg-3 col-md-12 p-0 align-self-center">
                             <label>Board basis</label>
                             
-                            <select name="nights" id="board-basis" form="nightsform">
-							  <option value="select">Select</option>
-							  <option value="f-board">Full Board</option>
-							  <option value="h-board">Half Board</option>
-							  <option value="n-board">No Board</option>
-							</select>
+                            <select  class="custom-select sources" placeholder="Select Any">
+                              <option value="Full Board">Full Board</option>
+                              <option value="Half Board">Half Board</option>
+                              <option value="No Board">No Board</option>
+                            </select>
                           </div>
                           <div class="col-lg-3 col-md-12 p-0 align-self-center">
                             <label>Outward & Return</label>
-                            
-                            <select name="nights" id="on-re" form="nightsform">
-							  <option value="select">Select</option>
-							  <option value="outward">Outward</option>
-							  <option value="return">Return</option>
-							</select>
+                                 
+                            <select  class="custom-select sources" placeholder="Select Any">
+                              <option value="Outward">Outward</option>
+                              <option value="Return">Return</option>
+                            </select>
                           </div>
 							<div class="col-lg-3 col-md-12 p-0 align-self-center">
 								<button class="banner-main-search">Search Now</button>
@@ -401,7 +396,7 @@
         </div>
       </div>
 </section>
-<section class="trending-destination-custom custom-pad">
+<section class="trending-destination-custom custom-pad mt-3">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -503,7 +498,51 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4 col-md-12"> <a href="#" class="blog-custom-wrap">
+      <div class="col-12 p-0">
+        <div class="owl-carousel owl-latestNews">
+          <div class="item">
+            <a href="#" class="blog-custom-wrap">
+              <div class="blog-img"> <img src="images/blog-img-1.jpg" class="img-fluid" alt=""> </div>
+              <div class="blog-content">
+                <h4>A Quote Post for Vestibulum</h4>
+                <p class="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam debitis velit.</p>
+                <button class="read-more">Read More</button>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" class="blog-custom-wrap">
+              <div class="blog-img"> <img src="images/blog-img-2.jpg" class="img-fluid" alt=""> </div>
+              <div class="blog-content">
+                <h4>A Quote Post for Vestibulum</h4>
+                <p class="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam debitis velit.</p>
+                <button class="read-more">Read More</button>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" class="blog-custom-wrap">
+              <div class="blog-img"> <img src="images/blog-img-3.jpg" class="img-fluid" alt=""> </div>
+              <div class="blog-content">
+                <h4>A Quote Post for Vestibulum</h4>
+                <p class="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam debitis velit.</p>
+                <button class="read-more">Read More</button>
+              </div>
+            </a> 
+          </div>
+          <div class="item">
+            <a href="#" class="blog-custom-wrap">
+              <div class="blog-img"> <img src="images/blog-img-2.jpg" class="img-fluid" alt=""> </div>
+              <div class="blog-content">
+                <h4>A Quote Post for Vestibulum</h4>
+                <p class="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam debitis velit.</p>
+                <button class="read-more">Read More</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-4 col-md-12"> <a href="#" class="blog-custom-wrap">
         <div class="blog-img"> <img src="images/blog-img-1.jpg" class="img-fluid" alt=""> </div>
         <div class="blog-content">
           <h4>A Quote Post for Vestibulum</h4>
@@ -526,7 +565,7 @@
           <p class="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam debitis velit.</p>
           <button class="read-more">Read More</button>
         </div>
-        </a> </div>
+        </a> </div> -->
     </div>
   </div>
 </section>
@@ -618,7 +657,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script> 
 <script src="js/owl.carousel.min.js"></script> 
-<script src="js/bootstrap-select.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>
