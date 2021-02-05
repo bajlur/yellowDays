@@ -1411,11 +1411,18 @@ font-size: 12px;
 .over-list-con ul li {
     margin-bottom: 16px;
     position: relative;
-    padding-left: 26px;
+    padding-left: 20px;
 }
-.over-list-con ul li span {
+.over-list-con ul li:before
+{
+    content: '';
     position: absolute;
     left: 0;
+    top: 8px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid #1372a0;
 }
 .over-list-con ul li ul {
     margin: 17px 0;
