@@ -163,6 +163,9 @@ jQuery('.owl-latestNews').owlCarousel({
     loop:true,
     margin:30,
     dots: false,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
     nav: true,
     navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
     responsive:{
@@ -177,6 +180,7 @@ jQuery('.owl-latestNews').owlCarousel({
         }
     }
 });
+
 
 jQuery('.next-page').click(function(){
 jQuery('.pagination-box ul').find('.pagenumber.active').next().addClass('active');
