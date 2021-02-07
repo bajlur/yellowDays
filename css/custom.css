@@ -596,11 +596,11 @@ input,select,input:focus,select:focus,.form-control:focus,.custom-travel-form bu
     border-bottom: 0;
 }
 .dp-nav-tabs li a.active {
-    background-color: #f69c1d !important;
+    background-color:#f60 !important;
     border: 0;
 }
 .dp-nav-tabs li a {
-    background-color: #f60;
+    background-color: #f69c1d;
     margin-right: 12px;
     border-radius: 0 !important;
     color: #fff !important;
