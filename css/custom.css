@@ -648,22 +648,22 @@ input,select,input:focus,select:focus,.form-control:focus,.custom-travel-form bu
     text-align: center;
     overflow: hidden;
 }
-.trending-destination-custom .container .row:last-child .col-md-4:nth-child(1) .destinatins-custom-back {
+.trending-destination-custom .container .row:last-child .col-lg-4:nth-child(1) .destinatins-custom-back {
     background-color: #e66428;
 }
-.trending-destination-custom .container .row:last-child .col-md-4:nth-child(2) .destinatins-custom-back {
+.trending-destination-custom .container .row:last-child .col-lg-4:nth-child(2) .destinatins-custom-back {
     background-color: #526391;
 }
-.trending-destination-custom .container .row:last-child .col-md-4:nth-child(3) .destinatins-custom-back {
+.trending-destination-custom .container .row:last-child .col-lg-4:nth-child(3) .destinatins-custom-back {
     background-color: #5897f8;
 }
-.trending-destination-custom .container .row:last-child .col-md-4:nth-child(4) .destinatins-custom-back {
+.trending-destination-custom .container .row:last-child .col-lg-4:nth-child(4) .destinatins-custom-back {
     background-color: #5896f9;
 }
-.trending-destination-custom .container .row:last-child .col-md-4:nth-child(5) .destinatins-custom-back {
+.trending-destination-custom .container .row:last-child .col-lg-4:nth-child(5) .destinatins-custom-back {
     background-color: #f39b1f;
 }
-.trending-destination-custom .container .row:last-child .col-md-4:nth-child(6) .destinatins-custom-back {
+.trending-destination-custom .container .row:last-child .col-lg-4:nth-child(6) .destinatins-custom-back {
     background-color: #ea6323;
 }
 .des-content h4 {
@@ -973,11 +973,14 @@ input,select,input:focus,select:focus,.form-control:focus,.custom-travel-form bu
 #form-step-2 {
     transition: all 0.3s ease-in-out;
     position: absolute;
-    width: 100%;
+    width: auto;
+    min-width: 50%;
     bottom: -92px;
     box-shadow: 0px 3px 10px rgb(0 0 0 / 6%);
 	opacity: 0;
 	display: none;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #form-step-2.extraFormActive
 {
@@ -1620,4 +1623,8 @@ font-size: 12px;
     background: none;
     background-color: rgba(0,0,0,.6);
     color: #fff;
+}
+button:focus
+{
+    outline: none;
 }
