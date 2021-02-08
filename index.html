@@ -106,7 +106,6 @@
                 <div class="custom-travel-form-wrap col-md-12">
                   <ul class="nav nav-tabs dp-nav-tabs" role="tablist">
                     <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Spain</a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Spain By Flight</a> </li>
                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Skling</a> </li>
                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Disneyland</a> </li>
                     <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Uk & Europe Breaks</a> </li>
@@ -215,70 +214,36 @@
                         </div> -->
                       </form>
                     </div>
-                    <div class="tab-pane" id="tabs-2" role="tabpanel">
-                      <form>
-                        <div class="form-group row">
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>Destination</label>
-                            <input type="text" placeholder="Enter Your Destination">
-                          </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>Departure Date</label>
-                            <input type="input" class="form-control" id="inputDate" placeholder="Pick Your Date">
-                          </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>No. Of Nights</label>
-                            <input type="number" placeholder="Select Stay">
-                          </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>No. Of Nights</label>
-                            <input type="number" placeholder="Select Stay">
-                          </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>Guests</label>
-                            <div class="booking-form__input guests-input">
-                              <button name="guests-btn" id="guests-input-btn">1 guest</button>
-                              <div class="guests-input__options" id="guests-input-options">
-                                <div> <span class="guests-input__ctrl minus" id="adults-subs-btn">-</span><!-- /.guests-input__ctrl --> 
-                                  <span class="guests-input__value"><span id="guests-count-adults">1</span>Adults</span><!-- /.guests-input__value --> 
-                                  <span class="guests-input__ctrl plus" id="adults-add-btn">+</span><!-- /.guests-input__ctrl --> 
-                                </div>
-                                <div> <span class="guests-input__ctrl minus" id="children-subs-btn">-</span><!-- /.guests-input__ctrl --> 
-                                  <span class="guests-input__value"><span id="guests-count-children">0</span>Children</span><!-- /.guests-input__value --> 
-                                  <span class="guests-input__ctrl plus" id="children-add-btn">+</span><!-- /.guests-input__ctrl --> 
-                                </div>
-                              </div>
-                              <!-- /.guests-input__options --> 
-                            </div>
-                            <!-- /.booking-form__input --> 
-                          </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <a class="custom-submit-btn" hrer="#">Continue</a>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
                     <div class="tab-pane" id="tabs-3" role="tabpanel">
                       <form>
                         <div class="form-group row">
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
                             <label>Destination</label>
-                            <input type="text" placeholder="Enter Your Destination">
+                            <select  class="custom-select sources" placeholder="Select Any">
+                              <option value="1">Birmingham</option>
+                              <option value="2">London</option>
+                              <option>Bristrol</option>
+                            </select>
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
                             <label>Departure Date</label>
-                            <input type="input" class="form-control" id="inputDate" placeholder="pick Your Date">
+                            <select  class="custom-select sources" placeholder="Select Any">
+                              <option value="1">02/02/2021</option>
+                              <option value="1">04/02/2021</option>
+                              <option value="1">06/02/2021</option>
+                              <option value="1">08/02/2021</option>
+                              <option value="1">10/02/2021</option>
+                            </select>
                           </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
+                          <div class="col-lg-2 col-md-6 col-6 p-0 align-self-center">
                             <label>No. Of Nights</label>
-                            <input type="number" placeholder="Select Stay">
+                            <select  class="custom-select sources" placeholder="Select Any">
+                              <option value="1">10 days (7 nights)</option>
+                              <option value="2">17 days (14 nights)</option>
+                            </select>
                           </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>No. Of Nights</label>
-                            <input type="number" placeholder="Select Stay">
-                          </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>Guests</label>
+                          <div class="col-lg-3 col-md-12 p-0 border-right-0 align-self-center">
+                            <label>Rooms & Guests</label>
                             <div class="booking-form__input guests-input">
                               <button name="guests-btn" id="guests-input-btn">1 guest</button>
                               <div class="guests-input__options" id="guests-input-options">
@@ -295,8 +260,8 @@
                             </div>
                             <!-- /.booking-form__input --> 
                           </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                           <a class="custom-submit-btn" hrer="#">Continue</a>
+                          <div class="col-lg-3 col-md-12 p-0 align-self-center">
+                           <button class="banner-main-search">Search Now</button>
                           </div>
                         </div>
                       </form>
@@ -305,23 +270,28 @@
                       <form>
                         <div class="form-group row">
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>Destination</label>
-                            <input type="text" placeholder="Enter Your Destination">
+                            <label>Hotel</label>
+                            <input type="text" placeholder="Enter Your Hotel">
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>Departure Date</label>
-                            <input type="input" class="form-control" id="inputDate" placeholder="pick Your Date">
+                            <label>Departure Month</label>
+                            <select  class="custom-select sources" placeholder="Select Any">
+                              <option value="1">02/02/2021</option>
+                              <option value="1">04/02/2021</option>
+                              <option value="1">06/02/2021</option>
+                              <option value="1">08/02/2021</option>
+                              <option value="1">10/02/2021</option>
+                            </select>
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
                             <label>No. Of Nights</label>
-                            <input type="number" placeholder="Select Stay">
+                            <select  class="custom-select sources" placeholder="Select Any">
+                              <option value="1">10 days (7 nights)</option>
+                              <option value="2">17 days (14 nights)</option>
+                            </select>
                           </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>No. Of Nights</label>
-                            <input type="number" placeholder="Select Stay">
-                          </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>Guests</label>
+                          <div class="col-lg-3 col-md-12 p-0 border-right-0 align-self-center">
+                            <label>Rooms & Guests</label>
                             <div class="booking-form__input guests-input">
                               <button name="guests-btn" id="guests-input-btn">1 guest</button>
                               <div class="guests-input__options" id="guests-input-options">
@@ -338,8 +308,8 @@
                             </div>
                             <!-- /.booking-form__input --> 
                           </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <a class="custom-submit-btn" hrer="#">Continue</a>
+                          <div class="col-lg-3 col-md-12 p-0 align-self-center">
+                           <button class="banner-main-search">Search Now</button>
                           </div>
                         </div>
                       </form>
@@ -349,40 +319,37 @@
                         <div class="form-group row">
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
                             <label>Destination</label>
-                            <input type="text" placeholder="Enter Your Destination">
+                            <select  class="custom-select sources" placeholder="Select Any">
+                              <option value="1">Birmingham</option>
+                              <option value="2">London</option>
+                              <option>Bristrol</option>
+                            </select>
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>Departure Date</label>
-                            <input type="input" class="form-control" id="inputDate" placeholder="pick Your Date">
+                            <label>Departure Month</label>
+                            <select  class="custom-select sources" placeholder="Select Any">
+                              <option value="1">02/02/2021</option>
+                              <option value="1">04/02/2021</option>
+                              <option value="1">06/02/2021</option>
+                              <option value="1">08/02/2021</option>
+                              <option value="1">10/02/2021</option>
+                            </select>
                           </div>
                           <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>No. Of Nights</label>
-                            <input type="number" placeholder="Select Stay">
+                            <label>No of Days</label>
+                            <select  class="custom-select sources" placeholder="Select Any">
+                              <option value="1">1 day</option>
+                              <option value="1">2 - 3 days</option>
+                              <option value="1">4 - 5 days</option>
+                              <option value="1">6 + days</option>
+                            </select>
                           </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>No. Of Nights</label>
-                            <input type="number" placeholder="Select Stay">
+                          <div class="col-lg-3 col-md-12 p-0  border-right-0 align-self-center">
+                            <label>No of Passengers</label>
+                            <input type="text" placeholder="Select Stay">
                           </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <label>Guests</label>
-                            <div class="booking-form__input guests-input">
-                              <button name="guests-btn" id="guests-input-btn">1 guest</button>
-                              <div class="guests-input__options" id="guests-input-options">
-                                <div> <span class="guests-input__ctrl minus" id="adults-subs-btn">-</span><!-- /.guests-input__ctrl --> 
-                                  <span class="guests-input__value"><span id="guests-count-adults">1</span>Adults</span><!-- /.guests-input__value --> 
-                                  <span class="guests-input__ctrl plus" id="adults-add-btn">+</span><!-- /.guests-input__ctrl --> 
-                                </div>
-                                <div> <span class="guests-input__ctrl minus" id="children-subs-btn">-</span><!-- /.guests-input__ctrl --> 
-                                  <span class="guests-input__value"><span id="guests-count-children">0</span>Children</span><!-- /.guests-input__value --> 
-                                  <span class="guests-input__ctrl plus" id="children-add-btn">+</span><!-- /.guests-input__ctrl --> 
-                                </div>
-                              </div>
-                              <!-- /.guests-input__options --> 
-                            </div>
-                            <!-- /.booking-form__input --> 
-                          </div>
-                          <div class="col-lg-2 col-md-12 p-0 align-self-center">
-                            <a class="custom-submit-btn" hrer="#">Continue</a>
+                          <div class="col-lg-3 col-md-12 p-0 align-self-center">
+                           <button class="banner-main-search">Search Now</button>
                           </div>
                         </div>
                       </form>
