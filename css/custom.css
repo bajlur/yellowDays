@@ -550,10 +550,15 @@ input,select,input:focus,select:focus,.form-control:focus,.custom-travel-form bu
 }
 .dp-tab-content .col-lg-2 , .dp-tab-content .col-lg-3 {
     border-right: 1px solid #000;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    padding-bottom: 20px !important;
-    padding-top: 20px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-bottom: 15px !important;
+    padding-top: 15px !important;
+}
+.dp-tab-content .col-lg-2
+{
+    flex: 0 0 15%;
+    max-width: 15%;
 }
 .dp-tab-content input::placeholder{
 	color: rgba(0,0,0,.7);
@@ -951,7 +956,7 @@ input,select,input:focus,select:focus,.form-control:focus,.custom-travel-form bu
     text-transform: uppercase;
     font-weight: 600;
     text-align: center !important;
-    padding: 29px 0 !important;
+    padding: 25px 0 !important;
     width: 100% !important;
     border-radius: 0 !important;
     font-size: 16px !important;
