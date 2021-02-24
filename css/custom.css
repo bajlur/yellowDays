@@ -1633,3 +1633,206 @@ button:focus
 {
     outline: none;
 }
+.traveller-details-wrap {
+    background-color: #fdfdfd;
+    padding: 30px;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.16);
+}
+.traveller-details h4 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    color: #12759d;
+}
+.booking-print-btn a {
+    background-color: #12759d;
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.booking-print-btn {
+    float: right;
+}
+.traveller-details {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.traveller-info h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #12759d;
+    margin-bottom: 10px;
+}
+.traveller-info ul li h5 {
+    display: inline-block;
+    width: 18%;
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+}
+.traveller-info ul li{
+	margin-bottom: 12px;
+}
+.traveller-info ul li span {
+    color: #535353;
+    font-size: 14px;
+}
+.traveller-info ul {
+    margin-bottom: 12px;
+}
+.traveller-details-wrap p {
+    margin-bottom: 30px;
+}
+.cancel-booking {
+    background-color: #f39b1d;
+    color: #fff;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: -20px;
+    transform: translateY(-9px);
+}
+
+.traveller-details-wrap h6 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 20px;
+    color: #f39b1d;
+}
+
+.booking-package-details-name h4 {
+    color: #12759d;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.booking-package-details {
+    background-color: #fdfdfd;
+    padding: 17px 20px;
+}
+/*
+.booking-package-details-name {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+*/
+.booking-package-details ul li h6 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+}
+.booking-package-details ul li{
+	margin-bottom: 10px;
+}
+.package-cost h6 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #12759d;
+    margin-bottom: 6px;
+    font-style: normal;
+}
+/*
+.package-cost {
+    padding-top: 12px;
+    margin-top: 12px;
+    border-top: 1px solid #f1f1f1;
+}
+*/
+.traveller-info h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 7px;
+}
+.booking-table-dp{
+	width: 100%;
+}
+.booking-table-dp tbody th {
+    background-color: #1372a0;
+    border: 1px solid #000;
+    padding: 7px 10px;
+    color: #fff;
+}
+.booking-table-dp tbody tr td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+.booking-table-dp {
+    margin-top: 20px;
+}
+.booking-package-details-name {
+    margin-top: 20px;
+}
+.booking-package-details-name h6 {
+    font-size: 13px;
+    margin-top: 0;
+    color: #585858;
+    font-style: normal;
+}
+.traveller-details-wrap form button {
+    background-color: #1372a0;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 0;
+    padding: 9px 50px;
+}
+.traveller-details-wrap form label {
+    font-weight: 700;
+    color: #000;
+}
+.hotel-rw th {
+    background-color: #f39b1d !important;    
+}
+.hotel-rw th h4 {
+    color: #fff !important;
+    font-size: 18px;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+}
+.hotel-rw th h4 span {
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+/*MY ACCOUNT*/
+li.mc-btn-dt a {
+    color: white;
+}
+.mc-btn .mc-btn-dt {
+    background: #1372a0;
+    clear: both;
+    font-size: 18px;
+}
+.mc-btn-dt {
+    display: block;
+    padding: 4px;
+    margin-bottom: 18px;
+    line-height: 1.42857143;
+    background-color: #160903;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+li.mc-btn-dt i {
+    margin: 0 12px;
+	    color:#f7e623;
+}
+.mc-btn .mc-btn-dt:hover {
+    box-shadow: 0px 1px 13px -3px rgb(0 0 0 / 69%);
+    -webkit-box-shadow: 0px 1px 13px -3px rgb(0 0 0 / 69%);
+    -moz-box-shadow: 0px 1px 13px -3px rgba(0,0,0,0.69);
+}

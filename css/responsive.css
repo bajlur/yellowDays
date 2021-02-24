@@ -100,6 +100,10 @@ bottom: -169px;
 {
 	font-size: 13px;
 }
+	.booking-print-btn {
+    float: none;
+    margin-top: 20px;
+}
 	
 }
 @media only screen and (max-width: 480px) {	
@@ -115,6 +119,11 @@ bottom: -169px;
 	.pagination-box {width: 330px;margin: 30px auto 30px;}
 	.dp-nav-tabs li a {padding: 7px;font-size: 10px;}
 	#form-step-2 {width: 108%;}
+	.traveller-info ul li h5 {width: 50%;}
+	.traveller-details-wrap h6 {font-size: 16px;}
+	.booking-package-details {padding: 20px 20px;
+    margin-top: 30px;
+}
 }
 @media only screen and (max-width: 390px) {
 	.header-top ul li a p {display: none;}
@@ -124,4 +133,14 @@ bottom: -169px;
 	.dp-nav-tabs li {width: 49.3%;display: inline-block;}
 	.dp-nav-tabs li:first-child {margin-left: 0;}
 	.dp-nav-tabs li a {padding: 7px 9px;font-size: 12px;}
+	.traveller-info ul li h5 {font-size: 12px;}
+	.traveller-info ul li span {
+    font-size: 12px;
+}
+	.traveller-info h4 {font-size: 17px;
+    margin-bottom: 6px;
+}
+	.traveller-info h5 {font-size: 16px;
+    margin-bottom: 7px;
+}
 }
